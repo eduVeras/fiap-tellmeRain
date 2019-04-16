@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.TellMeRain.Domain", "F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.TellMeRain.Infrastructure", "Fiap.TellMeRain.Infrastructure\Fiap.TellMeRain.Infrastructure.csproj", "{6C703677-5EDF-4EA8-9468-222F7DD6EE6D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Services", "04 - Services", "{AB16F7B5-0176-47FC-A2B0-B5975FEDE869}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.TellMeRain.Twitter", "Fiap.TellMeRain.Twitter\Fiap.TellMeRain.Twitter.csproj", "{71714F68-22A5-4930-A698-1BB7FBA9D521}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,10 @@ Global
 		{6C703677-5EDF-4EA8-9468-222F7DD6EE6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C703677-5EDF-4EA8-9468-222F7DD6EE6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C703677-5EDF-4EA8-9468-222F7DD6EE6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71714F68-22A5-4930-A698-1BB7FBA9D521}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71714F68-22A5-4930-A698-1BB7FBA9D521}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71714F68-22A5-4930-A698-1BB7FBA9D521}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71714F68-22A5-4930-A698-1BB7FBA9D521}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +49,7 @@ Global
 		{E7F6A9A6-FC2A-46A2-AF57-B238A810F7DF} = {396C735E-3E38-43BC-8404-496B512381EB}
 		{48072062-5E9F-49C9-89C7-91D32574F4BC} = {530763AF-526D-4D28-8972-8489135EAD20}
 		{6C703677-5EDF-4EA8-9468-222F7DD6EE6D} = {A8405618-C095-439C-B812-CF581BADBFC9}
+		{71714F68-22A5-4930-A698-1BB7FBA9D521} = {AB16F7B5-0176-47FC-A2B0-B5975FEDE869}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {752192F1-9FDE-45A9-81A3-64312C06BB09}
