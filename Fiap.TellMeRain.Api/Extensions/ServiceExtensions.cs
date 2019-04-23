@@ -2,6 +2,9 @@
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using Fiap.TellMeRain.Infrastructure.Context;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Swashbuckle.AspNetCore.Swagger;
 
@@ -33,6 +36,24 @@ namespace Fiap.TellMeRain.Api.Extensions
                 //c.IncludeXmlComments(xmlPath);
                 c.IgnoreObsoleteProperties();
             });
+        }
+
+
+        public static void ConfigureDependencyInjection(this IServiceCollection services, IConfiguration configuration)
+        {
+
+            /*
+             * DI Configurações
+             */
+
+            /*
+             * Database
+             */
+            var strin = configuration.GetConnectionString("DefaultConnection");
+            services.AddDbContext<RainContext>(options => options.UseSqlServer(strin, builder => 
+                builder.EnableRetryOnFailure(3,TimeSpan.FromSeconds(5),null)));
+
+
         }
     }
 }
