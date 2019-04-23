@@ -15,6 +15,7 @@ namespace Fiap.TellMeRain.Api
             Configuration = configuration;
         }
 
+        public string CnnString => Configuration.GetConnectionString("DefaultConnection");
 
         public void ConfigureServices(IServiceCollection services)
         {   
